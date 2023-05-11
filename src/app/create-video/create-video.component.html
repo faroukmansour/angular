@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+<form (ngSubmit)="createTodo()" class="st-appointment-form" id="appointment-form">
+
+    <div class="flex flex-col flex-1 w-full">
+        <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <!-- Invalid input -->
+            <label class="block text-sm">
+              <span class="text-gray-700 dark:text-gray-400">
+                id
+              </span>
+              <input  [(ngModel)]="id" name="id" class="block w-full mt-1 text-sm border-green-600 dark:text-gray-300 dark:bg-gray-700 focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input" placeholder="Jane Doe">
+             
+            </label>
+            <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  title
+                </span>
+                <input  [(ngModel)]="title" name="title" class="block w-full mt-1 text-sm border-green-600 dark:text-gray-300 dark:bg-gray-700 focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input" placeholder="Jane Doe">
+               
+              </label>
+             <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                    genre
+                </span>
+                <input  [(ngModel)]="genre" name="genre" class="block w-full mt-1 text-sm border-green-600 dark:text-gray-300 dark:bg-gray-700 focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input" placeholder="Jane Doe">
+               
+              </label>   <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                    public
+                </span>
+                <input  [(ngModel)]="public" name="public" class="block w-full mt-1 text-sm border-green-600 dark:text-gray-300 dark:bg-gray-700 focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input" placeholder="Jane Doe">
+               
+              </label>
+             <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                    nbrShared
+                </span>
+                <input  [(ngModel)]="nbrShared" name="nbrShared" class="block w-full mt-1 text-sm border-green-600 dark:text-gray-300 dark:bg-gray-700 focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input" placeholder="Jane Doe">
+               
+              </label>
+        </div>
+       
+          <div class="col-lg-6">
+            <table>
+             <tr>
+               <td><input name="submit" type="submit" value="Ajouter" /></td>
+             </tr>
+            </table>
+       </div>
+    </div> 
+</form>
